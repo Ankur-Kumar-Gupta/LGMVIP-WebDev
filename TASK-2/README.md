@@ -1,4 +1,4 @@
-# **_The second task [TASK-2] is a React Application which fetched the data from an API and displays the User's ID,NAME,PROFILE-IMAGE,EMAIL._**
+# LGM-VIP-task-2
 
 # Getting Started with Create React App
 
@@ -70,4 +70,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# LGM-VIP-task-2
