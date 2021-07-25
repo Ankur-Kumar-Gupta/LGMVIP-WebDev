@@ -1,0 +1,763 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        font-family: 'Cabin', sans-serif;
+        scroll-behavior: smooth;
+    }
+    /* Navbar CSS Start */
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: 50px;
+    }
+    
+    .navbar-brand {
+        position: relative;
+        left: 13%;
+        font-size: 35px;
+        color: white;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .navbar-brand:hover {
+        color: white;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navbar-items {
+        position: absolute;
+        right: 10%;
+    }
+    
+    .nav-item {
+        margin: 5px;
+    }
+    
+    .nav-item a {
+        color: white;
+    }
+    
+    .nav-item a:hover,
+    .nav-item a:focus {
+        color: rgb(255, 255, 109);
+    }
+    /* Navbar CSS end */
+    /* Carosel CSS start */
+    
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+    
+    .banner {
+        background-size: cover;
+        background-position: center, center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        opacity: 0.7;
+    }
+    
+    .carousel-indicators {
+        justify-content: left;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 7px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        visibility: hidden;
+    }
+    /* Carosel CSS end */
+    /* Home Page Contents CSS start */
+    
+    .container {
+        padding: 200px 500px 200px 100px;
+        z-index: 20;
+    }
+    
+    .container h1 {
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .container p {
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .container button {
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        border: 0px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 82);
+        font-size: 12px;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .container button:hover {
+        background-color: rgb(76, 14, 126);
+        transform: scale(1.1);
+        color: white;
+    }
+    /* Home Page Contents CSS end */
+    /* Welcome Page CSS start */
+    
+    .welcome {
+        position: relative;
+        width: 100%;
+        height: 650px;
+    }
+    
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    
+    .welcome-container h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+    
+    .welcome-text-details {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .welcome img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .welcome-text-details img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .welcome-tiles {
+        display: flex;
+    }
+    
+    .welcome-tiles .tile-item {
+        width: 200px;
+        height: 300px;
+        margin: 10px 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tile-item .tile-heading {
+        font-size: 18px;
+    }
+    
+    .tile-btn {
+        background-color: rgb(240, 240, 146);
+        border: 1px soid black;
+        border-radius: 3px;
+        width: 80px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .tile-btn:hover {
+        background-color: rgb(118, 72, 141);
+        border: 0px;
+        color: white;
+    }
+    /* Welcome Page CSS end */
+    
+    hr {
+        width: 60%;
+        margin: 0px 20%;
+    }
+    /* Projects Page CSS start */
+    
+    .projects {
+        width: 100%;
+        height: 650px;
+    }
+    
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px;
+    }
+    
+    .project-heading {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    
+    .projects-container-tiles {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .project-tile-item {
+        width: 250px;
+        height: 475px;
+        margin: 20px;
+        text-align: center;
+        background-color: rgb(185, 184, 185);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .project-tile-item:hover {
+        background-color: rgb(240, 240, 146);
+        box-shadow: 5px 10px 8px #888888;
+        cursor: pointer;
+    }
+    
+    .project-tile-item:hover button {
+        border: 0;
+        background-color: rgb(118, 72, 141);
+        color: white;
+    }
+    
+    .project-tile-item img {
+        width: 250px;
+        height: 275px;
+    }
+    
+    .project-tile-item h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .project-tile-item p {
+        margin: 0px 40px;
+        font-size: 12px;
+    }
+    
+    .project-tile-item button {
+        margin-top: 10px;
+        border: 1px solid black;
+        width: 170px;
+        height: 35px;
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: rgb(240, 240, 146);
+        transition: all 0.3s ease-in-out;
+    }
+    /* Projects Page CSS end */
+    /* Pricing CSS start */
+    
+    .pricing {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(196, 247, 242);
+    }
+    
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px;
+    }
+    
+    .pricing-container h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    
+    .pricing-tiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .pricing-tile-item {
+        background-color: rgb(51, 67, 85);
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px 25px;
+        padding: 10px 10px;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        color: rgb(196, 247, 242);
+    }
+    
+    .pricing-tile-item:hover {
+        cursor: pointer;
+        background-color: rgb(196, 247, 242);
+        transform: scale(1.2);
+        color: rgb(0, 0, 0);
+        box-shadow: 5px 10px 8px #000000;
+    }
+    
+    .pricing-tile-item:hover .item-btn {
+        cursor: pointer;
+        background-color: rgb(196, 247, 242);
+        color: rgb(0, 0, 0);
+    }
+    
+    .pricing-tile-item:hover .item-btn a {
+        color: rgb(0, 0, 0);
+    }
+    
+    .pricing-tile-item h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .pricing-tile-item h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .pricing-tile-item .details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pricing-tile-item .details li {
+        list-style: none;
+        font-size: 13px;
+        text-align: left;
+    }
+    
+    .pricing-tile-item .item-btn {
+        margin: auto;
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        border: 1px solid black;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .pricing-tile-item .item-btn:hover {
+        background-color: black;
+    }
+    
+    .pricing-tile-item .item-btn:hover a {
+        color: rgb(196, 247, 242);
+    }
+    
+    .item-btn a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: rgb(196, 247, 242);
+        transition: all 0.3s ease-in-out;
+    }
+    /* Pricing CSS end */
+    /* Video Project CSS start */
+    
+    .video-project {
+        width: 100%;
+        height: 540px;
+        background-color: rgb(118, 72, 141);
+        padding-top: 20px;
+    }
+    
+    .video-project h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(211, 211, 211);
+    }
+    
+    .video-carousel {
+        width: 100%;
+        height: 360px;
+    }
+    
+    .carousel-cell {
+        width: 50%;
+        height: 310px;
+        margin-top: 20px;
+        background-color: rgb(118, 72, 141);
+        position: relative;
+        padding-bottom: 30px;
+    }
+    
+    .iframe-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+    }
+    /* Video Project CSS end */
+    /* Team CSS Start */
+    
+    .team {
+        width: 100%;
+        height: 800px;
+    }
+    
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-container h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+    
+    .member {
+        width: 250px;
+        height: 270px;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .member .member-img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        z-index: 3;
+    }
+    
+    .member h2 {
+        font-size: 25px;
+    }
+    
+    .member h4 {
+        font-size: 16px;
+    }
+    
+    .member .socials {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .member .socials img {
+        width: 20px;
+        height: 20px;
+        margin: 0px 10px;
+    }
+    
+    .member:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+        transform: scale(1.2);
+        background-color: thistle;
+    }
+    
+    .member:hover .socials {
+        visibility: unset;
+    }
+    /* Team CSS End */
+    /* Life at Zippy CSS start */
+    
+    .life {
+        width: 100%;
+        height: 540px;
+        background-color: rgb(118, 72, 141);
+        padding-top: 20px;
+    }
+    
+    .life-container h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(211, 211, 211);
+    }
+    
+    .carousel-cell {
+        width: 40%;
+        height: 310px;
+        margin-top: 20px;
+        background-color: rgb(118, 72, 141);
+        position: relative;
+        padding-bottom: 30px;
+    }
+    
+    .carousel-cell img {
+        width: 600px;
+        height: 300px;
+    }
+    /* Life at Zippy CSS end */
+    /* Newsletter CSS start */
+    
+    .newsletter {
+        width: 100%;
+        height: 300px;
+        background: url("images/newsletter.jpg") no-repeat center center/cover;
+    }
+    
+    .newsletter h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-details {
+        width: 700px;
+        height: 55px;
+        margin-right: 40px;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    
+    .submit-details {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        background-color: rgb(118, 72, 141);
+        transition: all 0.3s ease-in-out;
+        border: 0;
+        color: rgb(240, 240, 146);
+    }
+    
+    .submit-details:hover {
+        background-color: rgb(240, 240, 146);
+        color: rgb(118, 72, 141);
+        transform: scale(1.2);
+    }
+    /* Newsletter CSS end */
+    /* Blog CSS start */
+    
+    .blog {
+        width: 100%;
+        height: 760px;
+    }
+    
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    
+    .blog-container h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+    
+    .blog-container .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .blog-container .item {
+        padding: 30px;
+        width: 350px;
+        height: 550px;
+        margin: 20px 40px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog-container .item img {
+        width: 290px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .blog-container .item h2 {
+        font-size: 27px;
+        font-weight: 800;
+    }
+    
+    .blog-container .item .date-blog {
+        font-size: 25px;
+    }
+    
+    .blog-container .item .blog-btn {
+        width: 120px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 12px;
+        background-color: rgb(118, 72, 141);
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .blog-container .blog-btn:hover {
+        background-color: rgb(240, 240, 146);
+        color: rgb(118, 72, 141);
+        transform: scale(1.1);
+    }
+    /* Blog CSS end */
+    /* contact CSS start */
+    
+    .contact-map {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .map {
+        width: 50%;
+        height: 650px;
+    }
+    
+    .contact {
+        width: 50%;
+        height: 650px;
+        background-color: rgb(240, 240, 146);
+        padding: 50px;
+    }
+    
+    .contact h1 {
+        font-size: 45px;
+        margin-bottom: 25px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .contact h4 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .contact-form .text {
+        width: 300px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .contact textarea {
+        width: 300px;
+        height: 120px;
+        resize: none;
+        margin-bottom: 10px;
+    }
+    
+    .contact .contact-btn {
+        width: 300px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: rgb(118, 72, 141);
+        color: white;
+    }
+    /* contact CSS end */
+    /* footer css start */
+    
+    footer {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 60px 40px 40px 40px;
+    }
+    
+    .footer-container h3 {
+        margin-bottom: 30px;
+    }
+    
+    .address {
+        text-align: center;
+    }
+    
+    .follow {
+        text-align: center;
+    }
+    
+    .follow-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .footer-container img {
+        width: 30px;
+        height: 30px;
+        transition: all 0.1s ease-in-out;
+    }
+    
+    .footer-container img:hover {
+        transform: scale(1.1);
+    }
+    
+    .contact-us {
+        text-align: center;
+    }
+    
+    .copyright {
+        position: absolute;
+        width: 100%;
+        height: 27px;
+        text-align: center;
+        background-color: rgb(163, 159, 163);
+        bottom: 0;
+    }
+    /* footer css end */
