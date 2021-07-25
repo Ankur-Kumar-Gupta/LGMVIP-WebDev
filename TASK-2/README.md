@@ -1,5 +1,5 @@
-# LGM-VIP-task-2
-<br><hr><br>
+# LGM-VIP-TASK-2
+<br>
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
